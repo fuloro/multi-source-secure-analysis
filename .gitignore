@@ -1,0 +1,43 @@
+# Local papers (kept on disk; add bibliography links to documentation instead)
+*.pdf
+
+# Python and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+
+# Credentials and local settings
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.streamlit/secrets.toml
+.codex/
+.agents/
+.aws/
+
+# Local input and generated results; synthetic CSV may be committed explicitly
+data/private/
+data/raw/
+**/data/private/
+**/data/raw/
+outputs/
+**/outputs/
+logs/
+**/logs/
+*.log
+
+# Editor and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
