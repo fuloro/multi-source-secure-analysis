@@ -1,0 +1,13 @@
+cachetools==7.2.8
+cloudpickle==3.1.2
+dill==0.4.1
+jax==0.4.34
+jaxlib==0.4.34
+ml_dtypes==0.5.4
+multiprocess==0.70.19
+numpy==1.26.4
+opt_einsum==3.4.0
+packaging==26.3
+scipy==1.15.3
+spu==0.9.5
+termcolor==3.3.0

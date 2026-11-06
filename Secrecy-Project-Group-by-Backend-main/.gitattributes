@@ -1,0 +1,4 @@
+* text=auto eol=lf
+# Preserve supplied fixtures byte-for-byte for SHA256SUMS.json.
+test/** -text whitespace=cr-at-eol
+*.docx binary

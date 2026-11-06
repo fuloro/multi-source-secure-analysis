@@ -1,0 +1,111 @@
+{
+  "seed": 20261103,
+  "synthetic_only": true,
+  "cases": [
+    {
+      "scenario": "consumer_analysis",
+      "case": "demo",
+      "status": "SUCCESS",
+      "error_code": null,
+      "folder": "consumer_analysis/demo"
+    },
+    {
+      "scenario": "consumer_analysis",
+      "case": "repeated_amount",
+      "status": "SUCCESS",
+      "error_code": null,
+      "folder": "consumer_analysis/repeated_amount"
+    },
+    {
+      "scenario": "consumer_analysis",
+      "case": "fractional_mean",
+      "status": "SUCCESS",
+      "error_code": null,
+      "folder": "consumer_analysis/fractional_mean"
+    },
+    {
+      "scenario": "consumer_analysis",
+      "case": "no_overlap",
+      "status": "SUCCESS",
+      "error_code": null,
+      "folder": "consumer_analysis/no_overlap"
+    },
+    {
+      "scenario": "consumer_analysis",
+      "case": "empty_left",
+      "status": "SUCCESS",
+      "error_code": null,
+      "folder": "consumer_analysis/empty_left"
+    },
+    {
+      "scenario": "consumer_analysis",
+      "case": "empty_right",
+      "status": "SUCCESS",
+      "error_code": null,
+      "folder": "consumer_analysis/empty_right"
+    },
+    {
+      "scenario": "consumer_analysis",
+      "case": "zero_amount",
+      "status": "SUCCESS",
+      "error_code": null,
+      "folder": "consumer_analysis/zero_amount"
+    },
+    {
+      "scenario": "consumer_analysis",
+      "case": "reject_duplicate_subject",
+      "status": "REJECT",
+      "error_code": "DUPLICATE_LEFT_ID",
+      "folder": "consumer_analysis/reject_duplicate_subject"
+    },
+    {
+      "scenario": "consumer_analysis",
+      "case": "reject_duplicate_record",
+      "status": "REJECT",
+      "error_code": "DUPLICATE_RECORD_ID",
+      "folder": "consumer_analysis/reject_duplicate_record"
+    },
+    {
+      "scenario": "consumer_analysis",
+      "case": "reject_missing_amount",
+      "status": "REJECT",
+      "error_code": "MISSING_VALUE",
+      "folder": "consumer_analysis/reject_missing_amount"
+    },
+    {
+      "scenario": "consumer_analysis",
+      "case": "reject_negative_amount",
+      "status": "REJECT",
+      "error_code": "AMOUNT_RANGE",
+      "folder": "consumer_analysis/reject_negative_amount"
+    },
+    {
+      "scenario": "consumer_analysis",
+      "case": "reject_unknown_group",
+      "status": "REJECT",
+      "error_code": "GROUP_CODE",
+      "folder": "consumer_analysis/reject_unknown_group"
+    },
+    {
+      "scenario": "consumer_analysis",
+      "case": "reject_capacity",
+      "status": "REJECT",
+      "error_code": "CAPACITY_EXCEEDED",
+      "folder": "consumer_analysis/reject_capacity"
+    },
+    {
+      "scenario": "consumer_analysis",
+      "case": "reject_scientific_amount",
+      "status": "REJECT",
+      "error_code": "INTEGER_FORMAT",
+      "folder": "consumer_analysis/reject_scientific_amount"
+    },
+    {
+      "scenario": "consumer_analysis",
+      "case": "reject_amount_limit",
+      "status": "REJECT",
+      "error_code": "AMOUNT_RANGE",
+      "folder": "consumer_analysis/reject_amount_limit"
+    }
+  ]
+}

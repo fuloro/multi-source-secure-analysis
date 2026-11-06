@@ -1,0 +1,10 @@
+{
+  "expected_status": "SUCCESS",
+  "error_code": null,
+  "synthetic_only": true,
+  "source_seed": 20261103,
+  "actual_left_rows": 0,
+  "actual_right_rows": 1,
+  "matching_records": 0,
+  "groups": []
+}

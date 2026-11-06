@@ -1,0 +1,6 @@
+{
+  "expected_status": "REJECT",
+  "error_code": "AMOUNT_RANGE",
+  "synthetic_only": true,
+  "source_seed": 20261103
+}

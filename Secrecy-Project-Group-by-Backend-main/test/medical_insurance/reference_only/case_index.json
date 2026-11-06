@@ -1,0 +1,111 @@
+{
+  "seed": 20261103,
+  "synthetic_only": true,
+  "cases": [
+    {
+      "scenario": "medical_insurance",
+      "case": "demo",
+      "status": "SUCCESS",
+      "error_code": null,
+      "folder": "medical_insurance/demo"
+    },
+    {
+      "scenario": "medical_insurance",
+      "case": "repeated_amount",
+      "status": "SUCCESS",
+      "error_code": null,
+      "folder": "medical_insurance/repeated_amount"
+    },
+    {
+      "scenario": "medical_insurance",
+      "case": "fractional_mean",
+      "status": "SUCCESS",
+      "error_code": null,
+      "folder": "medical_insurance/fractional_mean"
+    },
+    {
+      "scenario": "medical_insurance",
+      "case": "no_overlap",
+      "status": "SUCCESS",
+      "error_code": null,
+      "folder": "medical_insurance/no_overlap"
+    },
+    {
+      "scenario": "medical_insurance",
+      "case": "empty_left",
+      "status": "SUCCESS",
+      "error_code": null,
+      "folder": "medical_insurance/empty_left"
+    },
+    {
+      "scenario": "medical_insurance",
+      "case": "empty_right",
+      "status": "SUCCESS",
+      "error_code": null,
+      "folder": "medical_insurance/empty_right"
+    },
+    {
+      "scenario": "medical_insurance",
+      "case": "zero_amount",
+      "status": "SUCCESS",
+      "error_code": null,
+      "folder": "medical_insurance/zero_amount"
+    },
+    {
+      "scenario": "medical_insurance",
+      "case": "reject_duplicate_subject",
+      "status": "REJECT",
+      "error_code": "DUPLICATE_LEFT_ID",
+      "folder": "medical_insurance/reject_duplicate_subject"
+    },
+    {
+      "scenario": "medical_insurance",
+      "case": "reject_duplicate_record",
+      "status": "REJECT",
+      "error_code": "DUPLICATE_RECORD_ID",
+      "folder": "medical_insurance/reject_duplicate_record"
+    },
+    {
+      "scenario": "medical_insurance",
+      "case": "reject_missing_amount",
+      "status": "REJECT",
+      "error_code": "MISSING_VALUE",
+      "folder": "medical_insurance/reject_missing_amount"
+    },
+    {
+      "scenario": "medical_insurance",
+      "case": "reject_negative_amount",
+      "status": "REJECT",
+      "error_code": "AMOUNT_RANGE",
+      "folder": "medical_insurance/reject_negative_amount"
+    },
+    {
+      "scenario": "medical_insurance",
+      "case": "reject_unknown_group",
+      "status": "REJECT",
+      "error_code": "GROUP_CODE",
+      "folder": "medical_insurance/reject_unknown_group"
+    },
+    {
+      "scenario": "medical_insurance",
+      "case": "reject_capacity",
+      "status": "REJECT",
+      "error_code": "CAPACITY_EXCEEDED",
+      "folder": "medical_insurance/reject_capacity"
+    },
+    {
+      "scenario": "medical_insurance",
+      "case": "reject_scientific_amount",
+      "status": "REJECT",
+      "error_code": "INTEGER_FORMAT",
+      "folder": "medical_insurance/reject_scientific_amount"
+    },
+    {
+      "scenario": "medical_insurance",
+      "case": "reject_amount_limit",
+      "status": "REJECT",
+      "error_code": "AMOUNT_RANGE",
+      "folder": "medical_insurance/reject_amount_limit"
+    }
+  ]
+}

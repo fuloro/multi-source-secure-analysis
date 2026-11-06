@@ -1,0 +1,64 @@
+# Local Python environments
+.venv/
+.venv*/
+venv/
+env/
+ENV/
+
+# Python-generated files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+*.cover
+.ipynb_checkpoints/
+*.egg-info/
+build/
+dist/
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+.aws/
+*.pem
+*.key
+
+# Local runtime output
+*.log
+*.pid
+*.pid.lock
+
+# Editor and operating system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Local agent tooling
+.agents/
+.codex/
+.claude/
+.gemini/
+.cursor/
+.aider*
+.cursorrules
+.cursorignore
+.github/copilot-instructions.md
+.github/instructions/
+
+# Local agent guidance, including translations (at any directory depth)
+[Aa][Gg][Ee][Nn][Tt][Ss]*.[Mm][Dd]
+[Cc][Ll][Aa][Uu][Dd][Ee]*.[Mm][Dd]
+[Gg][Ee][Mm][Ii][Nn][Ii]*.[Mm][Dd]

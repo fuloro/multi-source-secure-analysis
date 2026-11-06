@@ -1,0 +1,27 @@
+{
+  "expected_status": "SUCCESS",
+  "error_code": null,
+  "synthetic_only": true,
+  "source_seed": 20261103,
+  "actual_left_rows": 4,
+  "actual_right_rows": 4,
+  "matching_records": 3,
+  "groups": [
+    {
+      "group": 1,
+      "count": 2,
+      "sum_cent": 299,
+      "mean_cent_numerator": 299,
+      "mean_cent_denominator": 2,
+      "mean_yuan_display": "1.50"
+    },
+    {
+      "group": 2,
+      "count": 1,
+      "sum_cent": 1999,
+      "mean_cent_numerator": 1999,
+      "mean_cent_denominator": 1,
+      "mean_yuan_display": "19.99"
+    }
+  ]
+}
