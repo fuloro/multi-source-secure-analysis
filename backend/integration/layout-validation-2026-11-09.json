@@ -1,0 +1,364 @@
+{
+  "mode": "SYNTHETIC_PLAINTEXT_JOIN_THEN_SPU_GROUPBY",
+  "secure_join_implemented": false,
+  "total": 30,
+  "passed": 30,
+  "cases": [
+    {
+      "scenario": "medical_insurance",
+      "case": "demo",
+      "mpc_executed": true,
+      "status": "SUCCESS",
+      "error_code": null,
+      "public_join_capacity": 16,
+      "rows": [
+        {
+          "group_code": 1,
+          "count": 2,
+          "sum_cent": 2000,
+          "mean_numerator": 2000,
+          "mean_denominator": 2,
+          "mean_yuan_display": "10.00"
+        },
+        {
+          "group_code": 2,
+          "count": 1,
+          "sum_cent": 3000,
+          "mean_numerator": 3000,
+          "mean_denominator": 1,
+          "mean_yuan_display": "30.00"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "medical_insurance",
+      "case": "repeated_amount",
+      "mpc_executed": true,
+      "status": "SUCCESS",
+      "error_code": null,
+      "public_join_capacity": 16,
+      "rows": [
+        {
+          "group_code": 1,
+          "count": 2,
+          "sum_cent": 500,
+          "mean_numerator": 500,
+          "mean_denominator": 2,
+          "mean_yuan_display": "2.50"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "medical_insurance",
+      "case": "fractional_mean",
+      "mpc_executed": true,
+      "status": "SUCCESS",
+      "error_code": null,
+      "public_join_capacity": 16,
+      "rows": [
+        {
+          "group_code": 1,
+          "count": 3,
+          "sum_cent": 8,
+          "mean_numerator": 8,
+          "mean_denominator": 3,
+          "mean_yuan_display": "0.03"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "medical_insurance",
+      "case": "no_overlap",
+      "mpc_executed": true,
+      "status": "SUCCESS",
+      "error_code": null,
+      "public_join_capacity": 16,
+      "rows": [],
+      "passed": true
+    },
+    {
+      "scenario": "medical_insurance",
+      "case": "empty_left",
+      "mpc_executed": true,
+      "status": "SUCCESS",
+      "error_code": null,
+      "public_join_capacity": 16,
+      "rows": [],
+      "passed": true
+    },
+    {
+      "scenario": "medical_insurance",
+      "case": "empty_right",
+      "mpc_executed": true,
+      "status": "SUCCESS",
+      "error_code": null,
+      "public_join_capacity": 16,
+      "rows": [],
+      "passed": true
+    },
+    {
+      "scenario": "medical_insurance",
+      "case": "zero_amount",
+      "mpc_executed": true,
+      "status": "SUCCESS",
+      "error_code": null,
+      "public_join_capacity": 16,
+      "rows": [
+        {
+          "group_code": 1,
+          "count": 1,
+          "sum_cent": 0,
+          "mean_numerator": 0,
+          "mean_denominator": 1,
+          "mean_yuan_display": "0.00"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "medical_insurance",
+      "case": "reject_duplicate_subject",
+      "mpc_executed": false,
+      "status": "REJECT",
+      "error_code": "DUPLICATE_LEFT_ID",
+      "passed": true
+    },
+    {
+      "scenario": "medical_insurance",
+      "case": "reject_duplicate_record",
+      "mpc_executed": false,
+      "status": "REJECT",
+      "error_code": "DUPLICATE_RECORD_ID",
+      "passed": true
+    },
+    {
+      "scenario": "medical_insurance",
+      "case": "reject_missing_amount",
+      "mpc_executed": false,
+      "status": "REJECT",
+      "error_code": "MISSING_VALUE",
+      "passed": true
+    },
+    {
+      "scenario": "medical_insurance",
+      "case": "reject_negative_amount",
+      "mpc_executed": false,
+      "status": "REJECT",
+      "error_code": "AMOUNT_RANGE",
+      "passed": true
+    },
+    {
+      "scenario": "medical_insurance",
+      "case": "reject_unknown_group",
+      "mpc_executed": false,
+      "status": "REJECT",
+      "error_code": "GROUP_CODE",
+      "passed": true
+    },
+    {
+      "scenario": "medical_insurance",
+      "case": "reject_capacity",
+      "mpc_executed": false,
+      "status": "REJECT",
+      "error_code": "CAPACITY_EXCEEDED",
+      "passed": true
+    },
+    {
+      "scenario": "medical_insurance",
+      "case": "reject_scientific_amount",
+      "mpc_executed": false,
+      "status": "REJECT",
+      "error_code": "INTEGER_FORMAT",
+      "passed": true
+    },
+    {
+      "scenario": "medical_insurance",
+      "case": "reject_amount_limit",
+      "mpc_executed": false,
+      "status": "REJECT",
+      "error_code": "AMOUNT_RANGE",
+      "passed": true
+    },
+    {
+      "scenario": "consumer_analysis",
+      "case": "demo",
+      "mpc_executed": true,
+      "status": "SUCCESS",
+      "error_code": null,
+      "public_join_capacity": 16,
+      "rows": [
+        {
+          "group_code": 1,
+          "count": 2,
+          "sum_cent": 299,
+          "mean_numerator": 299,
+          "mean_denominator": 2,
+          "mean_yuan_display": "1.50"
+        },
+        {
+          "group_code": 2,
+          "count": 1,
+          "sum_cent": 1999,
+          "mean_numerator": 1999,
+          "mean_denominator": 1,
+          "mean_yuan_display": "19.99"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "consumer_analysis",
+      "case": "repeated_amount",
+      "mpc_executed": true,
+      "status": "SUCCESS",
+      "error_code": null,
+      "public_join_capacity": 16,
+      "rows": [
+        {
+          "group_code": 1,
+          "count": 2,
+          "sum_cent": 500,
+          "mean_numerator": 500,
+          "mean_denominator": 2,
+          "mean_yuan_display": "2.50"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "consumer_analysis",
+      "case": "fractional_mean",
+      "mpc_executed": true,
+      "status": "SUCCESS",
+      "error_code": null,
+      "public_join_capacity": 16,
+      "rows": [
+        {
+          "group_code": 1,
+          "count": 3,
+          "sum_cent": 8,
+          "mean_numerator": 8,
+          "mean_denominator": 3,
+          "mean_yuan_display": "0.03"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "consumer_analysis",
+      "case": "no_overlap",
+      "mpc_executed": true,
+      "status": "SUCCESS",
+      "error_code": null,
+      "public_join_capacity": 16,
+      "rows": [],
+      "passed": true
+    },
+    {
+      "scenario": "consumer_analysis",
+      "case": "empty_left",
+      "mpc_executed": true,
+      "status": "SUCCESS",
+      "error_code": null,
+      "public_join_capacity": 16,
+      "rows": [],
+      "passed": true
+    },
+    {
+      "scenario": "consumer_analysis",
+      "case": "empty_right",
+      "mpc_executed": true,
+      "status": "SUCCESS",
+      "error_code": null,
+      "public_join_capacity": 16,
+      "rows": [],
+      "passed": true
+    },
+    {
+      "scenario": "consumer_analysis",
+      "case": "zero_amount",
+      "mpc_executed": true,
+      "status": "SUCCESS",
+      "error_code": null,
+      "public_join_capacity": 16,
+      "rows": [
+        {
+          "group_code": 1,
+          "count": 1,
+          "sum_cent": 0,
+          "mean_numerator": 0,
+          "mean_denominator": 1,
+          "mean_yuan_display": "0.00"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "consumer_analysis",
+      "case": "reject_duplicate_subject",
+      "mpc_executed": false,
+      "status": "REJECT",
+      "error_code": "DUPLICATE_LEFT_ID",
+      "passed": true
+    },
+    {
+      "scenario": "consumer_analysis",
+      "case": "reject_duplicate_record",
+      "mpc_executed": false,
+      "status": "REJECT",
+      "error_code": "DUPLICATE_RECORD_ID",
+      "passed": true
+    },
+    {
+      "scenario": "consumer_analysis",
+      "case": "reject_missing_amount",
+      "mpc_executed": false,
+      "status": "REJECT",
+      "error_code": "MISSING_VALUE",
+      "passed": true
+    },
+    {
+      "scenario": "consumer_analysis",
+      "case": "reject_negative_amount",
+      "mpc_executed": false,
+      "status": "REJECT",
+      "error_code": "AMOUNT_RANGE",
+      "passed": true
+    },
+    {
+      "scenario": "consumer_analysis",
+      "case": "reject_unknown_group",
+      "mpc_executed": false,
+      "status": "REJECT",
+      "error_code": "GROUP_CODE",
+      "passed": true
+    },
+    {
+      "scenario": "consumer_analysis",
+      "case": "reject_capacity",
+      "mpc_executed": false,
+      "status": "REJECT",
+      "error_code": "CAPACITY_EXCEEDED",
+      "passed": true
+    },
+    {
+      "scenario": "consumer_analysis",
+      "case": "reject_scientific_amount",
+      "mpc_executed": false,
+      "status": "REJECT",
+      "error_code": "INTEGER_FORMAT",
+      "passed": true
+    },
+    {
+      "scenario": "consumer_analysis",
+      "case": "reject_amount_limit",
+      "mpc_executed": false,
+      "status": "REJECT",
+      "error_code": "AMOUNT_RANGE",
+      "passed": true
+    }
+  ]
+}

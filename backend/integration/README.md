@@ -2,7 +2,7 @@
 
 日期：2026-11-05。状态：合成数据联调接口，待双方确认。
 
-本目录对接“第一周A”的明文 Join 与 `Secrecy-Project-Group-by-Backend-main` 的 SPU Group-By，不修改双方原代码。当前可运行链路为双方 CSV → 输入校验 → 组员明文 Join → 固定容量适配 → SPU 聚合 → 合成数据结果对照。它不是安全 Join→Group-By 端到端实现。
+本目录对接`backend/join` 的明文 Join 与 `backend/groupby` 的 SPU Group-By，不修改双方原代码。当前可运行链路为双方 CSV → 输入校验 → 组员明文 Join → 固定容量适配 → SPU 聚合 → 合成数据结果对照。它不是安全 Join→Group-By 端到端实现。
 
 ## 统一字段
 
@@ -35,7 +35,7 @@ COUNT/SUM/MEAN 复用一次 `groupby_common`，分别从共同分组中取计数
 
 ## 运行与验收
 
-在项目根目录的 WSL Python 3.11/SPU 环境执行，依赖原来的两个成果目录，不移动或重命名它们：
+在项目根目录的 WSL Python 3.11/SPU 环境执行，依赖原来的两个成果目录，保留新的目录关系：
 
 ```bash
 python -B backend/integration/join_groupby_adapter.py --all --output backend/integration/acceptance-results.json
@@ -53,3 +53,7 @@ python -B backend/integration/join_groupby_adapter.py --scenario medical_insuran
 Join 负责人实现并验证此入口；Group-By 负责人确认三列及有效位契约与容量；C 负责同会话编排、输入适配和授权结果服务；D 负责场景字段及展示映射。原接口草案“输出给 B”统一改为“本批次指定分析者”，双方机构不默认获得输出。实际身份授权服务仍待 C 实现。
 
 下一阶段通过条件：同一次共享执行中完成安全 Join→本聚合内核；覆盖唯一键、一对多、无交集、零金额及全无效；仅指定分析者恢复固定容量最终结果。验证中间有效位、匹配数及组大小不进入公共日志；本目录的合成测试进程持有双方明文和最终结果，不代表生产隔离或权限已经实现。
+
+## 2026 年 11 月 9 日目录调整
+
+已上传的第一周A成果迁至 backend/join；Secrecy-Project-Group-by-Backend-main 迁至 backend/groupby。Word 中旧目录名以此映射为准，接口不变。Group-By 独立命令请先进入 backend/groupby 后运行。

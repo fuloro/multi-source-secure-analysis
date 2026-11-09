@@ -12,7 +12,7 @@ from fractions import Fraction
 import sys
 
 ROOT = Path(__file__).resolve().parents[2]
-GROUP_ROOT = ROOT / 'Secrecy-Project-Group-by-Backend-main'
+GROUP_ROOT = ROOT / 'backend/groupby'
 sys.path.insert(0, str(GROUP_ROOT / 'src'))
 
 def load_module(name, path):
@@ -21,7 +21,7 @@ def load_module(name, path):
     spec.loader.exec_module(module)
     return module
 
-join_module = load_module('submitted_join', ROOT / '第一周A/join_core.py')
+join_module = load_module('submitted_join', ROOT / 'backend/join/join_core.py')
 # Reuse the submitted synthetic validator/oracle; this is not a production service.
 fixtures = load_module('submitted_fixtures', GROUP_ROOT / 'src/backend/groupby/experiments/test_scenarios.py')
 
